@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leonardo Ops Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">L</div>
+          <div>
+            <h1>Leonardo</h1>
+            <p>Learning Operations Portal</p>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="Primary">
+          <button class="nav-item active" data-target="overview">Overview</button>
+          <button class="nav-item" data-target="organizations">Organizations</button>
+          <button class="nav-item" data-target="users">Users</button>
+          <button class="nav-item" data-target="courses">Courses</button>
+          <button class="nav-item" data-target="live">Livestreaming</button>
+        </nav>
+
+        <section class="palette-card">
+          <h2>Color Palette</h2>
+          <div class="palette-row">
+            <span>Primary Dark</span>
+            <code>#04253F</code>
+          </div>
+          <div class="palette-row">
+            <span>Primary Light</span>
+            <code>#0099FF</code>
+          </div>
+          <div class="palette-row">
+            <span>Secondary</span>
+            <code>#3C4314</code>
+          </div>
+          <div class="palette-row">
+            <span>White</span>
+            <code>#FFFFFF</code>
+          </div>
+        </section>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Operations Workspace</p>
+            <h2 id="section-title">Overview</h2>
+          </div>
+          <div class="header-actions">
+            <button class="btn btn-secondary">Export</button>
+            <button class="btn btn-primary">Create Workspace</button>
+          </div>
+        </header>
+
+        <section id="overview" class="view active">
+          <div class="kpi-grid">
+            <article class="kpi-card">
+              <h3>Organizations</h3>
+              <p class="value">24</p>
+              <p class="meta">+3 this month</p>
+            </article>
+            <article class="kpi-card">
+              <h3>Active Educators</h3>
+              <p class="value">1,286</p>
+              <p class="meta">92% onboarding completion</p>
+            </article>
+            <article class="kpi-card">
+              <h3>Courses Published</h3>
+              <p class="value">438</p>
+              <p class="meta">36 pending approval</p>
+            </article>
+            <article class="kpi-card">
+              <h3>Live Sessions Today</h3>
+              <p class="value">57</p>
+              <p class="meta">2 incidents flagged</p>
+            </article>
+          </div>
+
+          <div class="panel-grid">
+            <article class="panel">
+              <h3>Operational Health</h3>
+              <ul class="health-list">
+                <li><span>Organization provisioning</span><strong>Healthy</strong></li>
+                <li><span>User invitation delivery</span><strong>Healthy</strong></li>
+                <li><span>Course sync jobs</span><strong>Warning</strong></li>
+                <li><span>Streaming transcoding</span><strong>Healthy</strong></li>
+              </ul>
+            </article>
+            <article class="panel">
+              <h3>Pending Approvals</h3>
+              <ul class="approval-list">
+                <li>
+                  <span>Course quality review</span>
+                  <small>12 requests · 4 hrs SLA</small>
+                </li>
+                <li>
+                  <span>Educator role upgrade</span>
+                  <small>7 requests · 8 hrs SLA</small>
+                </li>
+                <li>
+                  <span>Livestream event publish</span>
+                  <small>5 requests · 2 hrs SLA</small>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="organizations" class="view">
+          <div class="section-head">
+            <h3>Multi-Organization Management</h3>
+            <button class="btn btn-primary">Add Organization</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Organization</th>
+                  <th>Region</th>
+                  <th>Plan</th>
+                  <th>Users</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Northbridge Academy</td>
+                  <td>US-East</td>
+                  <td>Enterprise</td>
+                  <td>345</td>
+                  <td><span class="chip success">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Crestwood Learning</td>
+                  <td>EU-West</td>
+                  <td>Growth</td>
+                  <td>213</td>
+                  <td><span class="chip warning">Pending Billing</span></td>
+                </tr>
+                <tr>
+                  <td>Summit Skills Hub</td>
+                  <td>APAC</td>
+                  <td>Enterprise</td>
+                  <td>728</td>
+                  <td><span class="chip success">Active</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="users" class="view">
+          <div class="section-head">
+            <h3>User Management</h3>
+            <button class="btn btn-primary">Invite Users</button>
+          </div>
+          <div class="panel-grid">
+            <article class="panel">
+              <h4>Role Distribution</h4>
+              <div class="bars">
+                <div class="bar"><span>Admins</span><b style="width: 18%">18%</b></div>
+                <div class="bar"><span>Educators</span><b style="width: 54%">54%</b></div>
+                <div class="bar"><span>Operators</span><b style="width: 20%">20%</b></div>
+                <div class="bar"><span>Learners</span><b style="width: 8%">8%</b></div>
+              </div>
+            </article>
+            <article class="panel">
+              <h4>Access Control Policies</h4>
+              <ul class="approval-list">
+                <li><span>SSO enforced for admins</span><small>Enabled</small></li>
+                <li><span>MFA required for operators</span><small>Enabled</small></li>
+                <li><span>SCIM provisioning</span><small>Enabled</small></li>
+                <li><span>External invite domain allowlist</span><small>12 domains</small></li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="courses" class="view">
+          <div class="section-head">
+            <h3>Course Management</h3>
+            <button class="btn btn-primary">Create Course</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Course</th>
+                  <th>Owner</th>
+                  <th>Last Update</th>
+                  <th>Completion</th>
+                  <th>Moderation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Data Literacy for Teams</td>
+                  <td>J. Alvarez</td>
+                  <td>Apr 18, 2026</td>
+                  <td>72%</td>
+                  <td><span class="chip success">Approved</span></td>
+                </tr>
+                <tr>
+                  <td>Project-Based STEM Lab</td>
+                  <td>A. Smith</td>
+                  <td>Apr 19, 2026</td>
+                  <td>44%</td>
+                  <td><span class="chip pending">In Review</span></td>
+                </tr>
+                <tr>
+                  <td>Academic Writing Mastery</td>
+                  <td>K. Cho</td>
+                  <td>Apr 20, 2026</td>
+                  <td>89%</td>
+                  <td><span class="chip success">Approved</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="live" class="view">
+          <div class="section-head">
+            <h3>Livestreaming Management</h3>
+            <button class="btn btn-primary">Schedule Session</button>
+          </div>
+          <div class="panel-grid">
+            <article class="panel">
+              <h4>Session Queue</h4>
+              <ul class="approval-list">
+                <li><span>Calculus Live Q&A</span><small>Starts in 25m</small></li>
+                <li><span>History Debate Room</span><small>Starts in 1h 10m</small></li>
+                <li><span>Science Lab Demo</span><small>Starts in 2h 05m</small></li>
+              </ul>
+            </article>
+            <article class="panel">
+              <h4>Stream Quality Metrics</h4>
+              <ul class="health-list">
+                <li><span>Average latency</span><strong>1.8s</strong></li>
+                <li><span>Packet loss</span><strong>0.4%</strong></li>
+                <li><span>Reconnect rate</span><strong>1.2%</strong></li>
+                <li><span>Moderator interventions</span><strong>3</strong></li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
