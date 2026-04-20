@@ -1,25 +1,25 @@
 # Leonardo
 
-A premium, dark-themed learning platform operations portal for educators and operations teams.
+A lightweight learning platform operations portal for educators and operations teams.
 
-## Included modules
+## Features
 
 - Multi-organization management
 - User management
 - Course management
 - Livestreaming management
-
-## UI/UX direction
-
-- Hero-led navigation layout inspired by the attached reference style
-- Accent color: `#26E5E9`
-- High-contrast dark background with glow effects and glass-like module cards
-- Fully responsive behavior for desktop and tablet/mobile
+- UI styled with the provided color palette:
+  - Primary Dark: `#04253F`
+  - Primary Light: `#0099FF`
+  - Secondary: `#3C4314`
+  - White: `#FFFFFF`
 
 ## Run locally
+
+Open `index.html` directly in a browser, or run:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Then open <http://localhost:8080>.
+Then visit <http://localhost:8080>.
