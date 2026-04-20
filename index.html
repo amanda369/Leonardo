@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leonardo Operations Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <header class="main-header">
+      <div class="logo-wrap">
+        <div class="logo-dot"></div>
+        <div>
+          <p class="logo-title">LEONARDO</p>
+          <p class="logo-sub">operations command center</p>
+        </div>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="top-nav" id="top-nav" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#organizations">Organizations</a>
+        <a href="#users">Users</a>
+        <a href="#courses">Courses</a>
+        <a href="#live">Live sessions</a>
+      </nav>
+      <div class="header-icons" aria-hidden="true">
+        <span>⌕</span>
+        <span>◔</span>
+        <span>◉</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="overview">
+        <div>
+          <p class="kicker">LEARNING PLATFORM OPS</p>
+          <h1>OPERATE MULTI-ORG LEARNING AT SCALE</h1>
+          <p class="hero-text">
+            One command portal for educators and operations teams to manage organizations,
+            users, courses, and livestreams with confidence.
+          </p>
+          <a class="cta" href="#modules">Launch workspace →</a>
+        </div>
+      </section>
+
+      <section class="metrics" id="modules">
+        <article>
+          <h3>24</h3>
+          <p>Organizations managed</p>
+        </article>
+        <article>
+          <h3>1,286</h3>
+          <p>Active educators</p>
+        </article>
+        <article>
+          <h3>438</h3>
+          <p>Courses published</p>
+        </article>
+        <article>
+          <h3>57</h3>
+          <p>Live sessions today</p>
+        </article>
+      </section>
+
+      <section class="module-grid">
+        <article class="module-card" id="organizations">
+          <div class="module-head">
+            <h2>Multi-Organization Management</h2>
+            <button class="btn">Add organization</button>
+          </div>
+          <p class="module-copy">
+            Configure workspaces, region settings, contracts, and status across every partner
+            institution in one place.
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Organization</th>
+                  <th>Region</th>
+                  <th>Plan</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Northbridge Academy</td>
+                  <td>US-East</td>
+                  <td>Enterprise</td>
+                  <td><span class="pill">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Crestwood Learning</td>
+                  <td>EU-West</td>
+                  <td>Growth</td>
+                  <td><span class="pill pill-soft">Pending</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="module-card" id="users">
+          <div class="module-head">
+            <h2>User Management</h2>
+            <button class="btn">Invite users</button>
+          </div>
+          <p class="module-copy">
+            Control role-based access, SSO enforcement, and account lifecycle for admins,
+            educators, operators, and learners.
+          </p>
+          <ul class="list-stack">
+            <li><span>Admins</span><strong>18%</strong></li>
+            <li><span>Educators</span><strong>54%</strong></li>
+            <li><span>Operators</span><strong>20%</strong></li>
+            <li><span>Learners</span><strong>8%</strong></li>
+          </ul>
+        </article>
+
+        <article class="module-card" id="courses">
+          <div class="module-head">
+            <h2>Course Management</h2>
+            <button class="btn">Create course</button>
+          </div>
+          <p class="module-copy">
+            Track ownership, publication workflow, quality approvals, and completion progress
+            with clear moderation visibility.
+          </p>
+          <ul class="timeline">
+            <li><b>Data Literacy for Teams</b><small>Approved · 72% completion</small></li>
+            <li><b>Project-Based STEM Lab</b><small>In review · 44% completion</small></li>
+            <li><b>Academic Writing Mastery</b><small>Approved · 89% completion</small></li>
+          </ul>
+        </article>
+
+        <article class="module-card" id="live">
+          <div class="module-head">
+            <h2>Livestreaming Management</h2>
+            <button class="btn">Schedule session</button>
+          </div>
+          <p class="module-copy">
+            Manage session queue, moderator support, and stream quality telemetry in real time.
+          </p>
+          <ul class="list-stack">
+            <li><span>Average latency</span><strong>1.8s</strong></li>
+            <li><span>Packet loss</span><strong>0.4%</strong></li>
+            <li><span>Reconnect rate</span><strong>1.2%</strong></li>
+            <li><span>Interventions</span><strong>3</strong></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
